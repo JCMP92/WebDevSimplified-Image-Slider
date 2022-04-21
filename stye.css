@@ -82,10 +82,10 @@ ul {
     width: 70vw;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .carousel {
     width: 100vw;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stye.css.map */

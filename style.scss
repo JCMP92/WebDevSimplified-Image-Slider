@@ -65,3 +65,14 @@ ul {
 .carousel-button.next {
   right: 1rem;
 }
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 70vw;
+  }
+}
+@media (max-width: 425px) {
+  .carousel {
+    width: 100vw;
+  }
+}
