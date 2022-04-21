@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Image Slider</title>
+  </head>
+  <body>
+    <section aria-label="Newest Photos">
+      <div class="carousel" data-carousel>
+        <!-- We use HTML entities to represent the arrows inside the buttons, you can find the codes here: https://www.toptal.com/designers/htmlarrows/symbols/ -->
+        <button class="carousel-button prev" data-carousel-button="prev">
+          &#10094;
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          &#10095;
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img
+              src="https://images.unsplash.com/photo-1650374471470-a46867a3ce06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="ship and sunset"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1649285661235-02abe5a6dd90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="rock"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1615631151417-f5a2dee76733?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
+              alt="canyon"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1544943910-4c1dc44aab44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=694&q=80"
+              alt="betta fish"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1649105283954-c3be2467fae5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+              alt="jellyfish"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1649566356845-1ba8cb3146b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="cactus"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

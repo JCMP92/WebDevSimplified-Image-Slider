@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #0a0a0a;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.carousel {
+  width: 40vw;
+  height: 100vh;
+  position: relative; //to give our buttons an absolute position inside the carousel
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; //to maintain the aspect ratio of the image
+  object-position: center; //to always focus on the center of the image
+}
+.carousel-button {
+  z-index: 2;
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%); //to make sure they are centered
+  color: rgba($color: #ffffff, $alpha: 0.5);
+  cursor: pointer;
+  border-radius: 2.5rem;
+  padding: 0 0.5rem;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+}
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+}
+.carousel-button:focus {
+  outline: 1px solid black; //This is specific for users that navigate the browser using tab
+}
+.carousel-button.prev {
+  left: 1rem;
+}
+.carousel-button.next {
+  right: 1rem;
+}
